@@ -16,4 +16,16 @@ class ArticleController
     {
         return new Response('hello, world!');
     }
+
+    /**
+     * @Route("/news/{slug}")
+     *
+     * @param $slug
+     *
+     * @return Response
+     */
+    public function show(string $slug)
+    {
+        return new Response('The slug is: '.$slug);
+    }
 }
