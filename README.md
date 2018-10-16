@@ -43,6 +43,8 @@ class ArticleController
 }
 ```
 
+- The [Symfony Flex](https://symfony.sh/) system is a tool for installing related packages. The system gives packages an alias (like `annotations` for `doctrine/annotations`) and a recipe which triggers actions after installing the said package.
+
 ## License
 
 Released under the [MIT License](LICENSE)
