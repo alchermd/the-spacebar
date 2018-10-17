@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ title }} {% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block body %}
     <div class="container mt-2">
@@ -8,9 +8,14 @@
             <div class="col-8">
                 <div class="card">
                     <div class="card-header">
-
                         <h1>{{ title }}</h1>
+
+                        <small>
+                            <span id="like-count">5</span>
+                            <span class="fa fa-heart-o text-danger" id="like-button" data-url="{{ url('app_article_togglearticleheart', {slug: slug}) }}"></span>
+                        </small>
                     </div>
+
                     <div class="card-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus aliquid blanditiis
                             dicta
@@ -53,4 +58,10 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('js/app_article_show.js') }}"></script>
 {% endblock %}
