@@ -45,6 +45,8 @@ class ArticleController
 
 - The [Symfony Flex](https://symfony.sh/) system is a tool for installing related packages. The system gives packages an alias (like `annotations` for `doctrine/annotations`) and a recipe which triggers actions after installing the said package.
 
+- Symfony uses (by default) [Twig](http://twig.symfony.com) as its templating system. The docs are straightforward so go read that one. It looks and feels like [Jinja](http://jinja.pocoo.org/docs/2.10/)!
+
 ## License
 
 Released under the [MIT License](LICENSE)
